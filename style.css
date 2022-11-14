@@ -1,0 +1,304 @@
+* {
+    font-family:monospace ;
+}
+
+body {
+    background-color: rgb(255, 192, 124);
+}
+
+h3 {
+    margin: 0.5rem;
+}
+
+p {
+    margin: 0.5rem;
+}
+
+
+h1[data-secret]:hover::after {
+    display:block;
+    content: attr(data-secret);
+    animation-name: Blink;
+    animation-duration: 1s;
+    animation-delay: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(248, 113, 76);
+    font-size: 1.5rem;
+    
+}
+
+
+@keyframes Blink {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+#meow-1 {
+    color: rgb(248, 113, 76);
+}
+
+#meow-2 {
+    color: rgb(248, 113, 76);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: ivory;
+    background-color: rgb(86, 193, 255);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 5px;
+    transition-duration: 1s;
+    transition-property: box-shadow;
+}
+
+header:hover {
+    box-shadow: 7px 7px 7px #8c855a, inset 7px 7px 7px #ffffff;
+    
+}
+
+.social-media {
+    background-color: rgb(255, 255, 149);
+    border-radius: 10px;
+    color: grey;
+    padding: 20px;
+    margin: 15px auto 10px;
+    width: 65%;
+    text-align: center;
+    transition-duration: 1s;
+    transition-property: padding, box-shadow;
+}
+
+.social-media:hover {
+    box-shadow: 7px 7px 7px #8c855a, inset 7px 7px 7px #ffffff;
+    padding: 30px 40px ;
+}
+
+#accounts {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    padding: 0px 5px 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#instagram {
+    display: flex;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+
+#instagram:hover {
+    transform: rotate(360deg);
+    cursor: grab;
+}
+
+
+
+#facebook {
+    display: flex;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+#facebook:hover {
+    transform: rotate(360deg);
+    cursor: grab;
+}
+
+#twitter {
+    display: flex;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+#twitter:hover {
+    transform: rotate(360deg);
+    cursor: grab;
+}
+
+#tiktok {
+    display: flex;
+    text-decoration: none;
+    color: RGB(0, 242, 234);
+    transition: transform 0.5s;
+}
+
+#tiktok:hover {
+    transform: rotate(360deg);
+    cursor: grab;
+}
+
+.subscription-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-image: url(./Assets/Cat-BG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    margin-bottom: 10px;
+    transition-duration: 1s;
+    transition-property: box-shadow;
+}
+
+.subscription-box:hover {
+    box-shadow: 7px 7px 7px #8c855a, inset 7px 7px 7px #ffffff;
+}
+
+@keyframes Wave {
+    0% {
+        transform: scale(1.5)
+    }
+    25% {
+
+        transform: scale(2.5) rotate(-20deg)
+    }
+ 
+    75% {
+
+        transform: scale(2.5) rotate(20deg);
+    }
+    100% {
+
+        transform: scale(1.0) rotate(0deg);
+    }
+}
+
+.subscription-box:hover #paw {
+    animation-name: Wave;
+    animation-duration: 2s;
+    animation-delay: ease;
+    animation-iteration-count: infinite;
+
+}
+
+.explanation {
+    background-color: rgba(206, 226, 255, 0.7);
+    border-radius: 10px;
+    border: 5px solid rgb(255, 125, 105);
+    text-align:center;
+    color: #404040;
+    width: 75%;
+    padding: 20px 0px 5px;
+    margin: 30px auto;
+    transition-duration: 1s;
+    transition-property: background-color, border;
+}
+
+.explanation:hover {
+    background-color: rgba(0, 174, 255, 0.8);
+    border: 5px solid rgb(255, 81, 0);
+}
+
+.data-entry {
+    display: flex;
+    flex-direction: column;
+    background: rgba(206, 226, 255, 0.7);
+    border-radius: 10px;
+    text-align:center;
+    color: #404040;
+    width: 75%;
+    padding: 20px 0px 20px;
+    margin: 0px auto 30px;
+    transition-duration: 1s;
+    transition-property: box-shadow, background-color, padding;
+}
+
+label {
+    margin: 3px auto;
+}
+
+.data-entry:hover {
+    padding: 20px;
+    background-color: rgba(206, 226, 255, 1.0);
+    box-shadow: 0 0 10px 5px rgb(255, 246, 255), inset 0 0 10px 5px rgb(255, 246, 255);
+
+}
+
+
+
+input {
+    height:fit-content;
+    margin: 5px;
+}
+
+.button {
+    margin: 5px auto;
+}
+
+#submit:hover {
+    color: pink;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    color: ivory;
+    background-color: rgb(86, 193, 255);
+    transition-duration: 1s;
+    transition-property: box-shadow;
+}
+
+footer:hover {
+    box-shadow: 7px 7px 7px #8c855a, inset 7px 7px 7px #ffffff;
+}
+
+#mailto {
+    margin: 0.5rem;
+    width:fit-content;
+    text-decoration: none;
+    color: ivory;
+}
+
+#mailto:hover {
+    transition: transform 1s;
+    transform: scale(1.2);
+}
+
+#address {
+    text-decoration: none;
+    color: ivory;
+}
+
+#address:hover {
+    transition: transform 1s;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 570px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #paw {
+        max-width: fit-content;
+    }
+
+    #accounts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px 40px 10px;
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+}
